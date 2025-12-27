@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
+  // Ensure assets resolve correctly when hosted at https://terexitariusstomp.github.io/project_tonomy/
+  base: process.env.VITE_BASE_PATH ?? "/project_tonomy/",
   plugins: [react()],
   define: {
     global: "globalThis",
