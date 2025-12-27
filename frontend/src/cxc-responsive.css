@@ -1,0 +1,139 @@
+/* === Desktop === */
+@media (min-width: 980px)
+{
+  #active-music-jumbo, #slide-left
+  {
+    width:480px;
+  }
+  #active-music-jumbo
+  {
+    right:10px;
+  }
+  #slide-left
+  {
+    left:10px;
+  }
+
+  #curdis-top-bar-icons .currency-display-button{
+    margin-left: 24px;
+  }
+
+}  /* END 1200px */
+
+/* === Portrait tablet to landscape and desktop === */
+@media (min-width: 768px) and (max-width: 979px)
+{
+
+
+    #curdis-top-bar-icons .currency-display-button{
+      margin-left: 4px;
+    }
+    #curdis-top-bar-icons .currency-display-button:first-child{
+      margin-left:9px;
+    }
+}  /* END 768-979px */
+
+/* === Landscape phone to portrait tablet === */
+@media (max-width: 767px)
+{
+  #close-jumbo, #close-add-music, #close-charts-modal, #close-currency-modal
+  {
+    top:33px !important;
+    left:calc(100% - 60px) !important;
+    position:fixed !important;
+  }
+
+  #ig-corner-button {
+    display:inline-block;
+  }
+
+  div.leaflet-control-attribution, #select-labels
+  {
+    display:none;
+  }
+
+  #artist-display-button, #guardian-display-button, #changer-display-button
+  {
+    display:none;
+  }
+
+} /* END 767px */
+
+/* === Where modals get tight === */
+@media (max-width: 576px)
+{
+  #steemit-login-link{
+    display:none;
+  }
+
+  #alert-holder {
+    width: 88%;
+  }
+
+  .chart-number
+  {
+    margin-left: -16px;
+  }
+
+  .bottom-alert{
+    width:92%;
+    padding-bottom: 20px;
+  }
+
+  #dismiss-cookie-warn{
+    display:block;
+    clear: both;
+    margin-top:1em;
+    width:100%;
+  }
+
+
+
+} /* END 576px */
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+
+  /*
+  #curdis-top-bar-icons .currency-display-button{
+    margin-left: 4px;
+  }
+  #curdis-top-bar-icons .currency-display-button:first-child{
+    margin-left:9px;
+  }
+  */
+
+  #active-music-jumbo, #slide-left
+  {
+    width: 100% !important;
+    min-width: 240px;
+    right:0px;
+    left:0px;
+    top:0px;
+    height: 100% !important;
+    overflow-x: hidden;
+  }
+
+  #active-music-jumbo
+  {
+    left:0px;
+  }
+
+
+  #chart-return-button, #active-music-return-button
+  {
+    top:calc(100% - 65px);
+    left:calc(100% - 45px);
+    position:fixed;
+    display:block;
+  }
+
+  #select-wrap *
+  {
+    float:left;
+  }
+  
+
+} /* END 480px */
+

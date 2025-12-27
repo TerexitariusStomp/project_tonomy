@@ -1,0 +1,247 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    115.56deg,
+    var(--main-light-gradient) 44.33%,
+    var(--main-blue-gradient) 89.31%
+  );
+}
+.box {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  padding: 1rem;
+}
+.box-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 0.4rem;
+  color: var(--accent);
+}
+.box-subheading {
+  font-weight: initial;
+  font-size: 1.2rem;
+}
+.demo-head {
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.demo-main {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 7rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 1rem;
+  color: var(--accent);
+}
+.intro {
+  width: 65%;
+}
+.main-image {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1.2;
+  height: 100%;
+}
+.loading-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1.5;
+  height: 100%;
+}
+header {
+  align-self: flex-start;
+  margin-bottom: auto;
+}
+.intro .footer {
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+.intro .snippet {
+  margin-bottom: auto;
+}
+.text-body {
+  max-width: 34vw;
+  line-height: 1.8rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+h1 {
+  text-align: left !important;
+  margin-bottom: 1rem;
+}
+.text-header {
+  margin-bottom: 1rem;
+}
+
+.intro-container {
+  padding: 6rem 0.5rem 0rem 6.5rem;
+}
+.mobile-img {
+  position: relative;
+  right: 2rem;
+  left: -12rem;
+  bottom: 0rem;
+  top: 1rem;
+  width: 65%;
+}
+.hand-img {
+  width: 75%;
+}
+.main-image .title {
+  margin-top: auto;
+  color: var(---bg);
+}
+.mobile-logo {
+  display: none;
+}
+
+.tonomy-login-button {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--primary) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: initial;
+  }
+  .intro,
+  .main-image {
+    padding: 1rem;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  .intro {
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .intro .footer {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .demo-main {
+    font-size: 2.1rem;
+  }
+
+  .text-body {
+    width: 100%;
+    padding: 0rem 0.3rem;
+    font-size: 1rem;
+    color: var(--accent);
+  }
+  .tonomy-login-button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+    overflow-x: hidden;
+    background: linear-gradient(
+      115.56deg,
+      var(--main-light-gradient) 44.33%,
+      var(--main-blue-gradient) 89.31%
+    );
+  }
+  .text-body {
+    max-width: 100%;
+  }
+  .intro {
+    width: 100%;
+  }
+  .box {
+    display: block;
+  }
+  .demo-head {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 1.2rem;
+  }
+  .demo-main {
+    text-align: center;
+    line-height: 1;
+  }
+  .intro-container {
+    padding: 0rem;
+    margin-top: 0.5rem;
+  }
+  .display-none {
+    display: none;
+  }
+  .text-body {
+    text-align: center;
+    max-width: 100%;
+  }
+  .t-button {
+    border-radius: 0.5rem;
+  }
+  .main-img {
+    position: relative;
+  }
+  .hand-img {
+    position: relative;
+    width: 265%;
+    top: -6rem;
+    left: 9.2rem;
+    right: 0rem;
+  }
+  .mobile-img {
+    position: relative;
+    right: 0rem;
+    width: 180%;
+    left: 2rem;
+    top: -6rem;
+  }
+  .intro .footer {
+    margin-top: 1.8rem;
+  }
+  .mobile-logo {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 767px) {
+  .demo-main {
+    font-size: 2.8rem;
+  }
+}

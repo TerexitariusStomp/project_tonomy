@@ -1,0 +1,170 @@
+.heading {
+  margin-bottom: 30px;
+}
+
+.menu-heading {
+  color:var(--white-color);
+  margin-left: 8px;
+}
+
+.ps-menu-root{
+  margin-top: 15px;
+  height: 95%;
+}
+
+.ps-active {
+  color: var(--link-color);
+}
+
+.ps-sidebar-root{
+  height: 100%;
+  background: var(--gray-100);
+}
+
+.ps-menu-root ul {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+
+.logout-menu {
+  margin-top: auto;
+}
+
+.sidebar {
+  flex: 0 0 3.9%;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 3.9%; 
+  height: calc(100vh - 3.9%); 
+}
+
+
+.ps-sidebar-container , h3{
+  background: var(--gray-100);
+  color: var(--accent);
+}
+
+a {
+  color: var(--gray-500);
+  &:hover{
+    color: var(--link-color);
+  }
+}
+
+.ps-menuitem-root{
+  line-height: 3.3;
+  background-color: var(--gray-100);
+}
+
+.ps-menuitem-root .ps-menu-button:hover {
+  background: none !important;
+  color: var(--accent);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--gray-100); 
+  color: var(--gray-700); 
+  z-index: 999999;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+.bottom-nav li {
+  text-align: center;
+  line-height: 1;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: var(--gray-700);
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.mobile-display {
+  display: none;
+}
+
+.active-item a{
+  color: var(--link-color);
+
+}
+.menu-icon{
+  font-size: 2rem;
+}
+.mobile-error-handler{
+  padding: 400px;
+}
+
+@media only screen and (min-width: 325px) and (max-width: 767px) {
+  .mobile-display-none{
+    display: none;
+  }
+  .mobile-display{
+    display: inline;
+  }
+  .main-content{
+    margin-left: 0;
+    padding-bottom: 5rem;
+  }
+  .mobile-text {
+    display: block;
+    font-size: 1rem;
+    margin-left: 0.2rem;
+  }
+  .main-content {
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .mobile-display-none{
+    display: none;
+  }
+  .mobile-display{
+    display: inline;
+  }
+  .main-content{
+    margin-left: 0;
+    padding-bottom: 5rem;
+  }
+  .mobile-text {
+    display: block;
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
+  }
+  .main-content {
+    overflow-y: auto;
+  }
+  .bottom-nav ul{
+    padding: 0.4rem;
+  }
+}

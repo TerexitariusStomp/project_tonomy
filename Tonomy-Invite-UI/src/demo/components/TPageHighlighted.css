@@ -1,0 +1,55 @@
+.main-highlighter-relative {
+  min-height: 250px;
+  max-height: 300px;
+  word-break: break-all; 
+  overflow-wrap: break-word; 
+}
+
+.highlight-page-docs {
+  padding: 0rem 2rem;
+}
+
+  .highlight-page-docs, .title {
+    color: var(---bg);
+  }
+
+  .title {
+    background-color: transparent;
+    text-align: left
+  }
+
+  .highlighter {
+    transform: scale(0.9);
+    margin: 1rem 0;
+    min-width: 400px;
+    font-size: 0.8rem;
+  }
+  .alink {
+    font-size: 20px;
+    color: var(---bg);
+    font-weight: 500;
+  }
+  
+  .alink.footer {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 5rem;
+    right: 4rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .highlight-page-docs {
+      padding: 1rem;
+    }
+    .highlighter {
+        transform: scale(0.8);
+        margin: 0;
+    }
+    .alink {
+        font-size: 16px;
+    }
+    
+    .alink.footer {
+        margin-top: 2rem;
+    }
+}
